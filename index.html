@@ -912,13 +912,12 @@
     <script>
         // Booking Functions
         function openBooking(service) {
-            document.getElementById('selectedService').textContent = service;
-            document.getElementById('BookingModal').classList.add('show');
+            document.getElementById('bookingModal').classList.add('show');
             document.body.style.overflow = 'hidden';
         }
 
         function closeBooking() {
-            document.getElementById('BookingModal').classList.remove('show');
+            document.getElementById('bookingModal').classList.remove('show');
             document.body.style.overflow = 'auto';
         }
 

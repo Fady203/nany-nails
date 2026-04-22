@@ -66,6 +66,13 @@
             color: #e91e63;
         }
         
+        /* Mobile Menu */
+        .mobile-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
         /* Booking Button in Header */
         .header-book-btn {
             background: #e91e63;
@@ -276,7 +283,7 @@
             transition: all 0.3s;
         }
         
-        .book-service-btn:hover {
+        .Book-service-btn:hover {
             background: #e91e63;
         }
         
@@ -391,109 +398,7 @@
             font-weight: 400;
         }
         
-        /* Booking Modal */
-        .booking-modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.7);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 300;
-        }
-        
-        .booking-modal.show {
-            display: flex;
-        }
-        
-        .booking-content {
-            background: #fff;
-            padding: 50px;
-            width: 90%;
-            max-width: 500px;
-            position: relative;
-            animation: slideIn 0.3s ease;
-        }
-        
-        @keyframes slideIn {
-            from { transform: translateY(-50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        
-        .close-booking {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: none;
-            border: none;
-            font-size: 28px;
-            cursor: pointer;
-            color: #999;
-        }
-        
-        .close-booking:hover {
-            color: #e91e63;
-        }
-        
-        .booking-content h2 {
-            font-family: 'Playfair Display', serif;
-            margin-bottom: 5px;
-            color: #2c2c2c;
-            font-size: 32px;
-        }
-        
-        .booking-content .service-name {
-            color: #e91e63;
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 30px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        
-        .booking-content form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        
-        .booking-content input,
-        .booking-content select {
-            padding: 16px;
-            border: 1px solid #ddd;
-            font-family: 'Poppins', sans-serif;
-            font-size: 14px;
-            outline: none;
-            transition: border-color 0.3s;
-        }
-        
-        .booking-content input:focus,
-        .booking-content select:focus {
-            border-color: #e91e63;
-        }
-        
-        .submit-booking {
-            background: #2c2c2c;
-            color: #fff;
-            border: none;
-            padding: 18px;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: background 0.3s;
-            margin-top: 10px;
-        }
-        
-        .submit-booking:hover {
-            background: #e91e63;
-        }
-        
-        /* Contact Section */
+        /* Contact */
         .contact-section {
             padding: 100px 20px;
             background: #fff;
@@ -528,6 +433,108 @@
         .contact-item p {
             color: #999;
             font-size: 14px;
+        }
+        
+        /* Booking Modal */
+        .booking-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 300;
+        }
+        
+        .booking-modal.show {
+            display: flex;
+        }
+        
+        .Booking-content {
+            background: #fff;
+            padding: 50px;
+            width: 90%;
+            max-width: 500px;
+            position: relative;
+            animation: slideIn 0.3s ease;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .close-booking {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: #999;
+        }
+        
+        .close-booking:hover {
+            color: #e91e63;
+        }
+        
+        .Booking-content h2 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 5px;
+            color: #2c2c2c;
+            font-size: 32px;
+        }
+        
+        .Booking-content .service-name {
+            color: #e91e63;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .Booking-content form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .Booking-content input,
+        .Booking-content select {
+            padding: 16px;
+            border: 1px solid #ddd;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        
+        .Booking-content input:focus,
+        .Booking-content select:focus {
+            border-color: #e91e63;
+        }
+        
+        .submit-Booking {
+            background: #2c2c2c;
+            color: #fff;
+            border: none;
+            padding: 18px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+        
+        .submit-Booking:hover {
+            background: #e91e63;
         }
         
         /* WhatsApp Float */
@@ -583,6 +590,100 @@
         .service-card, .review-card, .gallery-item {
             animation: fadeIn 0.6s ease forwards;
         }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 20px;
+            }
+            
+            .logo {
+                font-size: 24px;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background: #fff;
+                flex-direction: column;
+                padding: 80px 40px;
+                transition: right 0.3s;
+                box-shadow: -5px 0 30px rgba(0,0,0,0.1);
+                z-index: 200;
+            }
+            
+            nav.mobile-open {
+                right: 0;
+            }
+            
+            nav a {
+                margin: 20px 0;
+                font-size: 20px;
+                color: #2c2c2c;
+            }
+            
+            .header-book-btn {
+                display: none;
+            }
+            
+            .hero {
+                padding: 60px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero-btn {
+                width: 80%;
+                text-align: center;
+            }
+            
+            .services-grid,
+            .gallery-grid,
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-card,
+            .review-card {
+                padding: 30px 20px;
+            }
+            
+            .gallery-item {
+                height: 250px;
+            }
+            
+            .Booking-content {
+                width: 95%;
+                padding: 30px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -591,9 +692,9 @@
     <a href="https://wa.me/201001234567" class="whatsapp-float" target="_blank">💬</a>
 
     <!-- Booking Modal -->
-    <div class="booking-modal" id="bookingModal">
-        <div class="booking-content">
-            <button class="close-booking" onclick="closeBooking()">×</button>
+    <div class="Booking-modal" id="BookingModal">
+        <div class="Booking-content">
+            <button class="close-Booking" onclick="closeBooking()">×</button>
             <h2>Book Appointment</h2>
             <p class="service-name" id="selectedService">Select Service</p>
             <form onsubmit="submitBooking(event)">
@@ -622,7 +723,7 @@
                     <option>Acrylic Nails</option>
                     <option>Manicure</option>
                 </select>
-                <button type="submit" class="submit-booking">Confirm Booking</button>
+                <button type="submit" class="submit-Booking">Confirm Booking</button>
             </form>
         </div>
     </div>
@@ -630,14 +731,15 @@
     <!-- Header -->
     <header>
         <div class="logo">Nany <span>Nails</span></div>
+        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" onclick="toggleMenu()">Home</a>
+            <a href="#services" onclick="toggleMenu()">Services</a>
+            <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+            <a href="#reviews" onclick="toggleMenu()">Reviews</a>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
         </nav>
-        <button class="header-book-btn" onclick="openBooking('Any Service')">Book Now</button>
+        <button class="header-Booking-btn" onclick="openBooking('Any Service')">Book Now</button>
     </header>
 
     <!-- Hero -->
@@ -656,48 +758,48 @@
             <h2>Our Services</h2>
             <p>Professional Nail Care for Every Occasion</p>
         </div>
-        <div class="services-grid">
+        <div class="Services-grid">
             <div class="service-card" onclick="openBooking('Gel Polish')">
                 <div class="service-icon">💅</div>
                 <h3>Gel Polish</h3>
                 <p>Long-lasting gel polish application with UV lamp curing for perfect shine that lasts 2-3 weeks</p>
                 <div class="service-price">120 <span>EGP</span></div>
-                <button class="book-service-btn">Book Now</button>
+                <button class="Book-service-btn">Book Now</button>
             </div>
             <div class="service-card" onclick="openBooking('Nail Art')">
                 <div class="service-icon">✨</div>
                 <h3>Nail Art</h3>
                 <p>Creative designs, rhinestones, glitter, ombre, and custom nail art for any occasion</p>
                 <div class="service-price">200+ <span>EGP</span></div>
-                <button class="book-service-btn">Book Now</button>
+                <button class="Book-service-btn">Book Now</button>
             </div>
             <div class="service-card" onclick="openBooking('Pedicure')">
                 <div class="service-icon">🦶</div>
                 <h3>Pedicure</h3>
                 <p>Relaxing foot care with scrub, massage, cuticle care, and perfect polish application</p>
                 <div class="service-price">150 <span>EGP</span></div>
-                <button class="book-service-btn">Book Now</button>
+                <button class="Book-service-btn">Book Now</button>
             </div>
             <div class="service-card" onclick="openBooking('Acrylic Nails')">
                 <div class="service-icon">💎</div>
                 <h3>Acrylic Nails</h3>
                 <p>Professional acrylic and polygel extensions for stunning long nails with any design</p>
                 <div class="service-price">350+ <span>EGP</span></div>
-                <button class="book-service-btn">Book Now</button>
+                <button class="Book-service-btn">Book Now</button>
             </div>
             <div class="service-card" onclick="openBooking('Manicure')">
                 <div class="service-icon">🌸</div>
                 <h3>Manicure</h3>
                 <p>Classic manicure with shaping, cuticle care, hand massage, and regular polish</p>
                 <div class="service-price">100 <span>EGP</span></div>
-                <button class="book-service-btn">Book Now</button>
+                <button class="Book-service-btn">Book Now</button>
             </div>
             <div class="service-card" onclick="openBooking('Nail Repair')">
                 <div class="service-icon">🔧</div>
                 <h3>Nail Repair</h3>
                 <p>Fix broken nails, infills for acrylics, and general nail maintenance services</p>
                 <div class="service-price">80+ <span>EGP</span></div>
-                <button class="book-service-btn">Book Now</button>
+                <button class="Book-service-btn">Book Now</button>
             </div>
         </div>
     </section>
@@ -799,7 +901,7 @@
     <footer>
         <div class="logo">Nany <span>Nails</span></div>
         <p>Professional Nail Art & Gel Polish Studio</p>
-        <p>📞 0100-123-4567 | 📍 Cairo, Egypt | 🕐 Daily 10AM - 10PM</p>
+        <p>📞 0100-123-4567 | 📍 Giza, Egypt | 🕐 Daily 10AM - 10PM</p>
         <div style="margin-top: 20px;">
             <a href="#" style="color: #666; margin: 0 10px; text-decoration: none;">Instagram</a>
             <a href="#" style="color: #666; margin: 0 10px; text-decoration: none;">Facebook</a>
@@ -811,20 +913,26 @@
         // Booking Functions
         function openBooking(service) {
             document.getElementById('selectedService').textContent = service;
-            document.getElementById('bookingModal').classList.add('show');
+            document.getElementById('BookingModal').classList.add('show');
             document.body.style.overflow = 'hidden';
         }
 
         function closeBooking() {
-            document.getElementById('bookingModal').classList.remove('show');
+            document.getElementById('BookingModal').classList.remove('show');
             document.body.style.overflow = 'auto';
         }
 
         function submitBooking(e) {
             e.preventDefault();
-            alert('✅ Booking Confirmed!\n\nThank you for choosing Nany Nails!\nWe will contact you soon to confirm your appointment. 💅');
+            alert('✅ Booking Confirmed!\\n\\nThank you for choosing Nany Nails!\\nWe will contact you soon to confirm your appointment. 💅');
             closeBooking();
             e.target.reset();
+        }
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('mobile-open');
         }
 
         // Close modal on Escape key

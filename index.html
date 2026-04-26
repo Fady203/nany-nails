@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nany Nails | Professional Nail Art & Gel Polish</title>
+    <title>Agitech | Integrated Scientific Instruments</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
         
@@ -14,12 +14,12 @@
         }
         
         body {
-    font-family: 'Poppins', sans-serif;
-    background: #faf9f7;
-    min-height: 100vh;
-    color: #2c2c2c;
-    font-size: 18px; /* كان 16px */
-}
+            font-family: 'Poppins', sans-serif;
+            background: #f8f9fa;
+            min-height: 100vh;
+            color: #1a1a2e;
+            font-size: 18px;
+        }
         
         /* Header */
         header {
@@ -34,22 +34,8 @@
             box-shadow: 0 2px 20px rgba(0,0,0,0.05);
         }
         
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 32px;
-            font-weight: 700;
-            color: #e91e63;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-        }
-        
-        .logo span {
-            color: #2c2c2c;
-            font-weight: 400;
-            font-size: 14px;
-            display: block;
-            letter-spacing: 6px;
-            margin-top: 5px;
+        .logo-img {
+            height: 60px;
         }
         
         nav a {
@@ -57,30 +43,30 @@
             color: #666;
             margin: 0 25px;
             font-weight: 400;
-            font-size: 13px;
+            font-size: 15px;
             transition: color 0.3s;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
         
         nav a:hover {
-            color: #e91e63;
+            color: #e94560;
         }
         
         /* Mobile Menu */
         .mobile-toggle {
             display: none;
-            font-size: 24px;
+            font-size: 32px;
             cursor: pointer;
         }
         
-        /* Booking Button in Header */
-        .header-book-btn {
-            background: #e91e63;
+        /* CTA Button in Header */
+        .header-cta-btn {
+            background: #e94560;
             color: #fff;
             border: none;
-            padding: 12px 25px;
-            font-size: 12px;
+            padding: 14px 28px;
+            font-size: 14px;
             font-weight: 600;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -88,64 +74,61 @@
             transition: all 0.3s;
         }
         
-        .header-book-btn:hover {
-            background: #2c2c2c;
+        .header-cta-btn:hover {
+            background: #16213e;
         }
         
         /* Hero */
         .hero {
             text-align: center;
-            padding: 120px 20px;
-            background: #fce4ec;
+            padding: 140px 20px;
+            background: #16213e;
             position: relative;
             overflow: hidden;
+            color: #fff;
         }
         
-        .hero::before {
-            content: '💅';
-            position: absolute;
-            top: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 50px;
-            opacity: 0.3;
+        .hero-logo {
+            height: 120px;
+            margin-bottom: 30px;
+            filter: brightness(0) invert(1);
         }
         
         .hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 56px;
-            margin-bottom: 20px;
+            font-size: 72px;
+            margin-bottom: 25px;
             font-weight: 400;
             letter-spacing: 6px;
             text-transform: uppercase;
-            color: #2c2c2c;
+            color: #fff;
         }
         
         .hero h1 span {
-            color: #e91e63;
+            color: #e94560;
             font-style: italic;
             font-weight: 600;
         }
         
         .hero p {
-            font-size: 16px;
-            color: #666;
+            font-size: 20px;
+            color: #a0a0a0;
             font-weight: 300;
             letter-spacing: 3px;
             text-transform: uppercase;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
         
         .hero-cta {
             display: flex;
-            gap: 20px;
+            gap: 25px;
             justify-content: center;
             flex-wrap: wrap;
         }
         
         .hero-btn {
-            padding: 18px 40px;
-            font-size: 13px;
+            padding: 20px 50px;
+            font-size: 15px;
             font-weight: 600;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -156,62 +139,189 @@
         }
         
         .hero-btn.primary {
-            background: #e91e63;
+            background: #e94560;
             color: #fff;
-            border: 2px solid #e91e63;
+            border: 2px solid #e94560;
         }
         
         .hero-btn.primary:hover {
             background: transparent;
-            color: #e91e63;
+            color: #e94560;
         }
         
         .hero-btn.secondary {
             background: transparent;
-            color: #2c2c2c;
-            border: 2px solid #2c2c2c;
+            color: #fff;
+            border: 2px solid #fff;
         }
         
         .hero-btn.secondary:hover {
-            background: #2c2c2c;
-            color: #fff;
+            background: #fff;
+            color: #16213e;
         }
         
-        /* Services */
-        .services-section {
-            padding: 100px 20px;
+        /* Products */
+        .products-section {
+            padding: 120px 20px;
             background: #fff;
             text-align: center;
         }
         
         .section-title {
-            margin-bottom: 60px;
+            margin-bottom: 80px;
         }
         
         .section-title h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 42px;
-            color: #2c2c2c;
+            font-size: 52px;
+            color: #1a1a2e;
             font-weight: 400;
             letter-spacing: 4px;
             text-transform: uppercase;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         
         .section-title h2::after {
             content: '';
             display: block;
-            width: 60px;
-            height: 2px;
-            background: #e91e63;
-            margin: 20px auto 0;
+            width: 80px;
+            height: 3px;
+            background: #e94560;
+            margin: 25px auto 0;
         }
         
         .section-title p {
             color: #999;
-            font-size: 14px;
+            font-size: 18px;
             letter-spacing: 2px;
             text-transform: uppercase;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .product-card {
+            background: #f8f9fa;
+            padding: 60px 45px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.4s;
+            cursor: pointer;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(22, 33, 62, 0.1);
+            border-color: #16213e;
+        }
+        
+        .product-icon {
+            font-size: 80px;
+            margin-bottom: 35px;
+        }
+        
+        .product-card h3 {
+            color: #1a1a2e;
+            font-size: 24px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        .product-card p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        .product-price {
+            color: #e94560;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        
+        .product-price span {
+            font-size: 16px;
+            color: #999;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .inquiry-btn {
+            background: #16213e;
+            color: #fff;
+            border: none;
+            padding: 16px 40px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .inquiry-btn:hover {
+            background: #e94560;
+        }
+        
+        /* Brands Section */
+        .brands-section {
+            padding: 120px 20px;
+            background: #1a1a2e;
+            text-align: center;
+        }
+        
+        .brands-section .section-title h2 {
+            color: #fff;
+        }
+        
+        .brands-section .section-title p {
+            color: #999;
+        }
+        
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+        }
+        
+        .brand-item {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .brand-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .brand-item img {
+            max-width: 100%;
+            max-height: 80px;
+            object-fit: contain;
+        }
+        
+        /* Services Section */
+        .services-section {
+            padding: 120px 20px;
+            background: #f0f0f0;
+            text-align: center;
         }
         
         .services-grid {
@@ -223,26 +333,25 @@
         }
         
         .service-card {
-            background: #faf9f7;
+            background: #fff;
             padding: 50px 40px;
-            border: 1px solid #f0f0f0;
+            border: 1px solid #e0e0e0;
             transition: all 0.4s;
-            cursor: pointer;
         }
         
         .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(233, 30, 99, 0.1);
-            border-color: #e91e63;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+            border-color: #16213e;
         }
         
         .service-icon {
-            font-size: 56px;
+            font-size: 64px;
             margin-bottom: 25px;
         }
         
         .service-card h3 {
-            color: #2c2c2c;
+            color: #1a1a2e;
             font-size: 20px;
             margin-bottom: 15px;
             letter-spacing: 2px;
@@ -251,157 +360,14 @@
         }
         
         .service-card p {
-            color: #999;
-            font-size: 14px;
-            line-height: 1.8;
-            margin-bottom: 25px;
-        }
-        
-        .service-price {
-            color: #e91e63;
-            font-family: 'Playfair Display', serif;
-            font-size: 28px;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-        
-        .service-price span {
-            font-size: 14px;
-            color: #999;
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        .book-service-btn {
-            background: #2c2c2c;
-            color: #fff;
-            border: none;
-            padding: 14px 35px;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        
-        .book-service-btn:hover {
-            background: #e91e63;
-        }
-        
-        /* Gallery */
-        .gallery-section {
-            padding: 100px 20px;
-            background: #2c2c2c;
-            text-align: center;
-        }
-        
-        .gallery-section .section-title h2 {
-            color: #fff;
-        }
-        
-        .gallery-section .section-title p {
-            color: #999;
-        }
-        
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            height: 320px;
-        }
-        
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-        
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-        
-        .gallery-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(233, 30, 99, 0.9);
-            color: #fff;
-            padding: 25px;
-            transform: translateY(100%);
-            transition: transform 0.3s;
-        }
-        
-        .gallery-item:hover .gallery-overlay {
-            transform: translateY(0);
-        }
-        
-        .gallery-overlay h4 {
-            font-family: 'Playfair Display', serif;
-            font-size: 20px;
-            margin-bottom: 5px;
-        }
-        
-        /* Reviews */
-        .reviews-section {
-            padding: 100px 20px;
-            background: #fce4ec;
-            text-align: center;
-        }
-        
-        .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .review-card {
-            background: #fff;
-            padding: 40px;
-            text-align: left;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-        }
-        
-        .review-stars {
-            color: #e91e63;
-            font-size: 18px;
-            margin-bottom: 20px;
-            letter-spacing: 3px;
-        }
-        
-        .review-text {
             color: #666;
-            font-size: 15px;
-            line-height: 1.8;
-            margin-bottom: 25px;
-            font-style: italic;
-        }
-        
-        .review-author {
-            color: #2c2c2c;
-            font-weight: 600;
             font-size: 14px;
-            letter-spacing: 1px;
-        }
-        
-        .review-author span {
-            color: #999;
-            font-weight: 400;
+            line-height: 1.8;
         }
         
         /* Contact */
         .contact-section {
-            padding: 100px 20px;
+            padding: 120px 20px;
             background: #fff;
             text-align: center;
         }
@@ -409,9 +375,9 @@
         .contact-info {
             display: flex;
             justify-content: center;
-            gap: 60px;
+            gap: 80px;
             flex-wrap: wrap;
-            margin-top: 50px;
+            margin-top: 60px;
         }
         
         .contact-item {
@@ -419,25 +385,25 @@
         }
         
         .contact-item .icon {
-            font-size: 32px;
-            margin-bottom: 15px;
+            font-size: 48px;
+            margin-bottom: 20px;
         }
         
         .contact-item h4 {
-            color: #2c2c2c;
-            margin-bottom: 10px;
-            font-size: 16px;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+            font-size: 18px;
             letter-spacing: 2px;
             text-transform: uppercase;
         }
         
         .contact-item p {
             color: #999;
-            font-size: 14px;
+            font-size: 16px;
         }
         
-        /* Booking Modal */
-        .booking-modal {
+        /* Inquiry Modal */
+        .inquiry-modal {
             position: fixed;
             top: 0;
             left: 0;
@@ -450,15 +416,15 @@
             z-index: 300;
         }
         
-        .booking-modal.show {
+        .inquiry-modal.show {
             display: flex;
         }
         
-        .booking-content {
+        .inquiry-content {
             background: #fff;
-            padding: 50px;
+            padding: 60px;
             width: 90%;
-            max-width: 500px;
+            max-width: 550px;
             position: relative;
             animation: slideIn 0.3s ease;
         }
@@ -468,64 +434,66 @@
             to { transform: translateY(0); opacity: 1; }
         }
         
-        .close-booking {
+        .close-inquiry {
             position: absolute;
-            top: 20px;
-            right: 20px;
+            top: 25px;
+            right: 25px;
             background: none;
             border: none;
-            font-size: 28px;
+            font-size: 36px;
             cursor: pointer;
             color: #999;
         }
         
-        .close-booking:hover {
-            color: #e91e63;
+        .close-inquiry:hover {
+            color: #e94560;
         }
         
-        .booking-content h2 {
+        .inquiry-content h2 {
             font-family: 'Playfair Display', serif;
-            margin-bottom: 5px;
-            color: #2c2c2c;
-            font-size: 32px;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+            font-size: 38px;
         }
         
-        .booking-content .service-name {
-            color: #e91e63;
-            font-size: 16px;
+        .inquiry-content .product-name {
+            color: #e94560;
+            font-size: 18px;
             font-weight: 600;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
             letter-spacing: 2px;
             text-transform: uppercase;
         }
         
-        .booking-content form {
+        .inquiry-content form {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 18px;
         }
         
-        .booking-content input,
-        .booking-content select {
-            padding: 16px;
+        .inquiry-content input,
+        .inquiry-content select,
+        .inquiry-content textarea {
+            padding: 18px;
             border: 1px solid #ddd;
             font-family: 'Poppins', sans-serif;
-            font-size: 14px;
+            font-size: 16px;
             outline: none;
             transition: border-color 0.3s;
         }
         
-        .booking-content input:focus,
-        .booking-content select:focus {
-            border-color: #e91e63;
+        .inquiry-content input:focus,
+        .inquiry-content select:focus,
+        .inquiry-content textarea:focus {
+            border-color: #16213e;
         }
         
-        .submit-booking {
-            background: #2c2c2c;
+        .submit-inquiry {
+            background: #16213e;
             color: #fff;
             border: none;
-            padding: 18px;
-            font-size: 14px;
+            padding: 20px;
+            font-size: 16px;
             font-weight: 600;
             letter-spacing: 3px;
             text-transform: uppercase;
@@ -534,8 +502,8 @@
             margin-top: 10px;
         }
         
-        .submit-booking:hover {
-            background: #e91e63;
+        .submit-inquiry:hover {
+            background: #e94560;
         }
         
         /* WhatsApp Float */
@@ -545,13 +513,13 @@
             right: 30px;
             background: #25d366;
             color: #fff;
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 28px;
+            font-size: 40px;
             text-decoration: none;
             box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
             z-index: 90;
@@ -565,21 +533,32 @@
         /* Footer */
         footer {
             text-align: center;
-            padding: 60px 20px;
-            background: #1a1a1a;
+            padding: 80px 20px;
+            background: #1a1a2e;
         }
         
-        footer .logo {
-            margin-bottom: 25px;
-            font-size: 28px;
-            color: #e91e63;
+        footer .logo-img {
+            height: 80px;
+            margin-bottom: 30px;
+            filter: brightness(0) invert(1);
         }
         
         footer p {
             color: #666;
-            font-size: 13px;
+            font-size: 15px;
             letter-spacing: 2px;
             line-height: 2;
+        }
+        
+        footer a {
+            color: #666;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        
+        footer a:hover {
+            color: #e94560;
         }
         
         /* Animations */
@@ -588,18 +567,22 @@
             to { opacity: 1; transform: translateY(0); }
         }
         
-        .service-card, .review-card, .gallery-item {
+        .product-card, .service-card, .brand-item {
             animation: fadeIn 0.6s ease forwards;
         }
         
         /* Mobile Responsive */
         @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            
             header {
                 padding: 15px 20px;
             }
             
-            .logo {
-                font-size: 24px;
+            .logo-img {
+                height: 45px;
             }
             
             .mobile-toggle {
@@ -626,20 +609,28 @@
             
             nav a {
                 margin: 20px 0;
-                font-size: 20px;
-                color: #2c2c2c;
+                font-size: 18px;
+                color: #1a1a2e;
             }
             
-            .header-book-btn {
+            .header-cta-btn {
                 display: none;
             }
             
             .hero {
-                padding: 60px 20px;
+                padding: 80px 20px;
+            }
+            
+            .hero-logo {
+                height: 80px;
             }
             
             .hero h1 {
-                font-size: 36px;
+                font-size: 42px;
+            }
+            
+            .hero p {
+                font-size: 16px;
             }
             
             .hero-cta {
@@ -652,35 +643,47 @@
                 text-align: center;
             }
             
-            .services-grid,
-            .gallery-grid,
-            .reviews-grid {
+            .products-grid,
+            .brands-grid,
+            .services-grid {
                 grid-template-columns: 1fr;
             }
             
-            .service-card,
-            .review-card {
-                padding: 30px 20px;
+            .product-card,
+            .service-card {
+                padding: 40px 25px;
             }
             
-            .gallery-item {
-                height: 250px;
+            .product-icon {
+                font-size: 64px;
             }
             
-            .booking-content {
+            .brand-item {
+                height: 100px;
+            }
+            
+            .inquiry-content {
                 width: 95%;
-                padding: 30px;
+                padding: 35px;
+            }
+            
+            .close-inquiry {
+                font-size: 28px;
             }
             
             .contact-info {
                 flex-direction: column;
-                gap: 30px;
+                gap: 40px;
+            }
+            
+            .contact-item .icon {
+                font-size: 36px;
             }
             
             .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                font-size: 24px;
+                width: 60px;
+                height: 60px;
+                font-size: 30px;
                 bottom: 20px;
                 right: 20px;
             }
@@ -690,66 +693,145 @@
 <body>
 
     <!-- WhatsApp Float -->
-    <a href="https://wa.me/201001234567" class="whatsapp-float" target="_blank">💬</a>
+    <a href="https://wa.me/201285268796" class="whatsapp-float" target="_blank">💬</a>
 
-    <!-- Booking Modal -->
-    <div class="booking-modal" id="bookingModal">
-        <div class="booking-content">
-            <button class="close-booking" onclick="closeBooking()">×</button>
-            <h2>Book Appointment</h2>
-            <p class="service-name" id="selectedService">Select Service</p>
-            <form onsubmit="submitBooking(event)">
+    <!-- Inquiry Modal -->
+    <div class="inquiry-modal" id="inquiryModal">
+        <div class="inquiry-content">
+            <button class="close-inquiry" onclick="closeInquiry()">×</button>
+            <h2>Product Inquiry</h2>
+            <p class="product-name" id="selectedProduct">Select Product</p>
+            <form onsubmit="submitInquiry(event)">
                 <input type="text" placeholder="Your Name" required>
-                <input type="tel" placeholder="Phone Number (01xxxxxxxxx)" required>
-                <input type="date" required>
+                <input type="text" placeholder="Company / Laboratory Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="email" placeholder="Email Address" required>
                 <select required>
-                    <option value="">Select Time</option>
-                    <option>10:00 AM</option>
-                    <option>11:00 AM</option>
-                    <option>12:00 PM</option>
-                    <option>01:00 PM</option>
-                    <option>02:00 PM</option>
-                    <option>03:00 PM</option>
-                    <option>04:00 PM</option>
-                    <option>05:00 PM</option>
-                    <option>06:00 PM</option>
-                    <option>07:00 PM</option>
-                    <option>08:00 PM</option>
+                    <option value="">Select Product Category</option>
+                    <option>Chromatography</option>
+                    <option>Spectroscopy</option>
+                    <option>Microscopy</option>
+                    <option>Balances & Scales</option>
+                    <option>PCR & Thermal Cyclers</option>
+                    <option>Other</option>
                 </select>
-                <select id="serviceSelect">
-                    <option value="">Select Service (Optional)</option>
-                    <option>Gel Polish</option>
-                    <option>Nail Art</option>
-                    <option>Pedicure</option>
-                    <option>Acrylic Nails</option>
-                    <option>Manicure</option>
-                </select>
-                <button type="submit" class="submit-booking">Confirm Booking</button>
+                <textarea placeholder="Your Message / Requirements" rows="4"></textarea>
+                <button type="submit" class="submit-inquiry">Send Inquiry</button>
             </form>
         </div>
     </div>
 
     <!-- Header -->
     <header>
-        <div class="logo">Nany <span>Nails</span></div>
+        <img src="Agitech Scientific eng logo.png" alt="Agitech" class="logo-img">
         <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
         <nav>
             <a href="#home" onclick="toggleMenu()">Home</a>
+            <a href="#products" onclick="toggleMenu()">Products</a>
+            <a href="#brands" onclick="toggleMenu()">Brands</a>
             <a href="#services" onclick="toggleMenu()">Services</a>
-            <a href="#gallery" onclick="toggleMenu()">Gallery</a>
-            <a href="#reviews" onclick="toggleMenu()">Reviews</a>
             <a href="#contact" onclick="toggleMenu()">Contact</a>
         </nav>
-        <button class="header-book-btn" onclick="openBooking('Any Service')">Book Now</button>
+        <button class="header-cta-btn" onclick="openInquiry('General Inquiry')">Get Quote</button>
     </header>
 
     <!-- Hero -->
     <section class="hero" id="home">
-        <h1>Nany <span>Nails</span></h1>
-        <p>Professional Nail Art & Gel Polish Studio</p>
+        <img src="Agitech Scientific eng logo.png" alt="Agitech" class="hero-logo">
+        <h1>Agitech <span>Scientific</span></h1>
+        <p>Integrated Scientific Instruments & Laboratory Solutions</p>
         <div class="hero-cta">
-            <a href="#services" class="hero-btn primary">Our Services</a>
-            <a href="#" class="hero-btn secondary" onclick="openBooking('Any Service'); return false;">Book Now</a>
+            <a href="#products" class="hero-btn primary">Our Products</a>
+            <a href="#" class="hero-btn secondary" onclick="openInquiry('General Inquiry'); return false;">Get Quote</a>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products-section" id="products">
+        <div class="section-title">
+            <h2>Our Products</h2>
+            <p>Professional Laboratory Equipment</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card" onclick="openInquiry('Chromatography Systems')">
+                <div class="product-icon">🔬</div>
+                <h3>Chromatography</h3>
+                <p>HPLC, GC, and IC systems for separation and analysis of complex mixtures with high precision</p>
+                <div class="product-price">Quote <span>On Request</span></div>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+            <div class="product-card" onclick="openInquiry('Spectroscopy Equipment')">
+                <div class="product-icon">💡</div>
+                <h3>Spectroscopy</h3>
+                <p>UV-Vis, FTIR, NMR, and Mass Spectrometry for molecular structure analysis and identification</p>
+                <div class="product-price">Quote <span>On Request</span></div>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+            <div class="product-card" onclick="openInquiry('Microscopy Systems')">
+                <div class="product-icon">🔍</div>
+                <h3>Microscopy</h3>
+                <p>Optical, fluorescence, and electron microscopes for detailed imaging at all magnification levels</p>
+                <div class="product-price">Quote <span>On Request</span></div>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+            <div class="product-card" onclick="openInquiry('Laboratory Balances')">
+                <div class="product-icon">⚖️</div>
+                <h3>Balances & Scales</h3>
+                <p>Analytical balances, precision scales, and moisture analyzers with certified accuracy</p>
+                <div class="product-price">Quote <span>On Request</span></div>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+            <div class="product-card" onclick="openInquiry('PCR Thermal Cyclers')">
+                <div class="product-icon">🧬</div>
+                <h3>PCR & Thermal</h3>
+                <p>Thermal cyclers, real-time PCR, and nucleic acid amplification systems for molecular biology</p>
+                <div class="product-price">Quote <span>On Request</span></div>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+            <div class="product-card" onclick="openInquiry('General Laboratory')">
+                <div class="product-icon">🧪</div>
+                <h3>General Lab</h3>
+                <p>Centrifuges, incubators, autoclaves, and essential laboratory equipment for daily operations</p>
+                <div class="product-price">Quote <span>On Request</span></div>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="brands-section" id="brands">
+        <div class="section-title">
+            <h2>Our Partners</h2>
+            <p>Trusted Global Brands</p>
+        </div>
+        <div class="brands-grid">
+            <div class="brand-item">
+                <img src="BIO-RAD LOGO CMYK_30cm_300dpi.jpg" alt="Bio-Rad">
+            </div>
+            <div class="brand-item">
+                <img src="sciex-logo.png" alt="SCIEX">
+            </div>
+            <div class="brand-item">
+                <img src="Metrohm PNG.png" alt="Metrohm">
+            </div>
+            <div class="brand-item">
+                <img src="MolecularDevices_Logo.png" alt="Molecular Devices">
+            </div>
+            <div class="brand-item">
+                <img src="PILODIST-Logo_RGB-2020-removebg-preview.png" alt="Pilodist">
+            </div>
+            <div class="brand-item">
+                <img src="StanhopeSeta.png" alt="Stanhope-Seta">
+            </div>
+            <div class="brand-item">
+                <img src="Logo-F-DGSi.jpg" alt="F-DGSi">
+            </div>
+            <div class="brand-item">
+                <img src="LC Tech.jpg" alt="LC Tech">
+            </div>
+            <div class="brand-item">
+                <img src="Orbis-Logo-petrol-klein.png" alt="Orbis">
+            </div>
         </div>
     </section>
 
@@ -757,113 +839,28 @@
     <section class="services-section" id="services">
         <div class="section-title">
             <h2>Our Services</h2>
-            <p>Professional Nail Care for Every Occasion</p>
+            <p>Complete Laboratory Solutions</p>
         </div>
         <div class="services-grid">
-            <div class="service-card" onclick="openBooking('Gel Polish')">
-                <div class="service-icon">💅</div>
-                <h3>Gel Polish</h3>
-                <p>Long-lasting gel polish application with UV lamp curing for perfect shine that lasts 2-3 weeks</p>
-                <div class="service-price">120 <span>EGP</span></div>
-                <button class="book-service-btn">Book Now</button>
-            </div>
-            <div class="service-card" onclick="openBooking('Nail Art')">
-                <div class="service-icon">✨</div>
-                <h3>Nail Art</h3>
-                <p>Creative designs, rhinestones, glitter, ombre, and custom nail art for any occasion</p>
-                <div class="service-price">200+ <span>EGP</span></div>
-                <button class="book-service-btn">Book Now</button>
-            </div>
-            <div class="service-card" onclick="openBooking('Pedicure')">
-                <div class="service-icon">🦶</div>
-                <h3>Pedicure</h3>
-                <p>Relaxing foot care with scrub, massage, cuticle care, and perfect polish application</p>
-                <div class="service-price">150 <span>EGP</span></div>
-                <button class="book-service-btn">Book Now</button>
-            </div>
-            <div class="service-card" onclick="openBooking('Acrylic Nails')">
-                <div class="service-icon">💎</div>
-                <h3>Acrylic Nails</h3>
-                <p>Professional acrylic and polygel extensions for stunning long nails with any design</p>
-                <div class="service-price">350+ <span>EGP</span></div>
-                <button class="book-service-btn">Book Now</button>
-            </div>
-            <div class="service-card" onclick="openBooking('Manicure')">
-                <div class="service-icon">🌸</div>
-                <h3>Manicure</h3>
-                <p>Classic manicure with shaping, cuticle care, hand massage, and regular polish</p>
-                <div class="service-price">100 <span>EGP</span></div>
-                <button class="book-service-btn">Book Now</button>
-            </div>
-            <div class="service-card" onclick="openBooking('Nail Repair')">
+            <div class="service-card">
                 <div class="service-icon">🔧</div>
-                <h3>Nail Repair</h3>
-                <p>Fix broken nails, infills for acrylics, and general nail maintenance services</p>
-                <div class="service-price">80+ <span>EGP</span></div>
-                <button class="book-service-btn">Book Now</button>
+                <h3>Installation</h3>
+                <p>Professional installation and setup of all laboratory equipment with certified technicians</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Gallery -->
-    <section class="gallery-section" id="gallery">
-        <div class="section-title">
-            <h2>Our Work</h2>
-            <p>See Our Latest Nail Art Creations</p>
-        </div>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400" alt="French Tips">
-                <div class="gallery-overlay">
-                    <h4>French Tips</h4>
-                    <p>Classic elegance with a modern twist</p>
-                </div>
+            <div class="service-card">
+                <div class="service-icon">📋</div>
+                <h3>Validation</h3>
+                <p>IQ/OQ/PQ qualification and method validation services for regulatory compliance</p>
             </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400" alt="Gel Extensions">
-                <div class="gallery-overlay">
-                    <h4>Gel Extensions</h4>
-                    <p>Perfect length and strength</p>
-                </div>
+            <div class="service-card">
+                <div class="service-icon">🔩</div>
+                <h3>Maintenance</h3>
+                <p>Preventive maintenance contracts and emergency repair services to minimize downtime</p>
             </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=400" alt="Glitter Art">
-                <div class="gallery-overlay">
-                    <h4>Glitter Art</h4>
-                    <p>Sparkle and shine for parties</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=400" alt="Matte Finish">
-                <div class="gallery-overlay">
-                    <h4>Matte Finish</h4>
-                    <p>Modern sophisticated look</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Reviews -->
-    <section class="reviews-section" id="reviews">
-        <div class="section-title">
-            <h2>Client Reviews</h2>
-            <p>What Our Clients Say About Us</p>
-        </div>
-        <div class="reviews-grid">
-            <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">"Nany did an amazing job on my wedding nails! The gel polish lasted for 3 weeks without chipping. The design was exactly what I wanted!"</p>
-                <p class="review-author">Sarah A. <span>- Bride</span></p>
-            </div>
-            <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">"Best nail art in Cairo! The designs are so creative and detailed. I always get compliments on my nails. Highly recommend!"</p>
-                <p class="review-author">Mariam K. <span>- Regular Client</span></p>
-            </div>
-            <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">"The acrylic nails look so natural and beautiful. Nany is very professional, friendly, and the salon is super clean. Will definitely come back!"</p>
-                <p class="review-author">Nour H. <span>- First Visit</span></p>
+            <div class="service-card">
+                <div class="service-icon">📚</div>
+                <h3>Training</h3>
+                <p>Comprehensive user training and application support for all instruments and software</p>
             </div>
         </div>
     </section>
@@ -872,23 +869,23 @@
     <section class="contact-section" id="contact">
         <div class="section-title">
             <h2>Contact Us</h2>
-            <p>Book Your Appointment Today</p>
+            <p>Get Your Laboratory Solution Today</p>
         </div>
         <div class="contact-info">
             <div class="contact-item">
                 <div class="icon">📱</div>
                 <h4>Phone</h4>
-                <p>0100-123-4567</p>
+                <p>+2 012 852 687 96</p>
             </div>
             <div class="contact-item">
                 <div class="icon">📍</div>
-                <h4>Location</h4>
-                <p>Cairo, Egypt</p>
+                <h4>Address</h4>
+                <p>11th Floor, Bldg 44, Ahmed Mohammed Ibrahim St., Nasr City, Cairo</p>
             </div>
             <div class="contact-item">
                 <div class="icon">🕐</div>
                 <h4>Working Hours</h4>
-                <p>Daily 10:00 AM - 10:00 PM</p>
+                <p>Sun - Thu: 9:00 AM - 5:00 PM</p>
             </div>
             <div class="contact-item">
                 <div class="icon">💬</div>
@@ -900,32 +897,33 @@
 
     <!-- Footer -->
     <footer>
-        <div class="logo">Nany <span>Nails</span></div>
-        <p>Professional Nail Art & Gel Polish Studio</p>
-        <p>📞 0100-123-4567 | 📍 Cairo, Egypt | 🕐 Daily 10AM - 10PM</p>
+        <img src="Agitech Scientific eng logo.png" alt="Agitech" class="logo-img">
+        <p>Integrated Scientific Instruments S.A.E</p>
+        <p>📞 +2 012 852 687 96 | 📍 Nasr City, Cairo, Egypt</p>
+        <p>🕐 Sun - Thu: 9AM - 5PM</p>
         <div style="margin-top: 20px;">
-            <a href="#" style="color: #666; margin: 0 10px; text-decoration: none;">Instagram</a>
-            <a href="#" style="color: #666; margin: 0 10px; text-decoration: none;">Facebook</a>
-            <a href="#" style="color: #666; margin: 0 10px; text-decoration: none;">TikTok</a>
+            <a href="#">Website</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Email</a>
         </div>
     </footer>
 
     <script>
-        // Booking Functions
-        function openBooking(service) {
-            document.getElementById('bookingModal').classList.add('show');
+        // Inquiry Functions
+        function openInquiry(product) {
+            document.getElementById('inquiryModal').classList.add('show');
             document.body.style.overflow = 'hidden';
         }
 
-        function closeBooking() {
-            document.getElementById('bookingModal').classList.remove('show');
+        function closeInquiry() {
+            document.getElementById('inquiryModal').classList.remove('show');
             document.body.style.overflow = 'auto';
         }
 
-        function submitBooking(e) {
+        function submitInquiry(e) {
             e.preventDefault();
-            alert('✅ Booking Confirmed!\n\nThank you for choosing Nany Nails!\nWe will contact you soon to confirm your appointment. 💅');
-            closeBooking();
+            alert('✅ Inquiry Sent!\n\nThank you for contacting Agitech Scientific!\nOur team will respond within 24 hours. 🔬');
+            closeInquiry();
             e.target.reset();
         }
 
@@ -937,7 +935,7 @@
 
         // Close modal on Escape key
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeBooking();
+            if (e.key === 'Escape') closeInquiry();
         });
 
         // Smooth scroll for navigation

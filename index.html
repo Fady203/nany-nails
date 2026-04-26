@@ -24,7 +24,7 @@
         /* Header */
         header {
             background: #fff;
-            padding: 25px 60px;
+            padding: 20px 60px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -34,22 +34,8 @@
             box-shadow: 0 2px 20px rgba(0,0,0,0.05);
         }
         
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 38px;
-            font-weight: 700;
-            color: #16213e;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-        }
-        
-        .logo span {
-            color: #0f3460;
-            font-weight: 400;
-            font-size: 16px;
-            display: block;
-            letter-spacing: 6px;
-            margin-top: 5px;
+        .logo-img {
+            height: 60px;
         }
         
         nav a {
@@ -64,7 +50,7 @@
         }
         
         nav a:hover {
-            color: #16213e;
+            color: #e94560;
         }
         
         /* Mobile Menu */
@@ -76,7 +62,7 @@
         
         /* CTA Button in Header */
         .header-cta-btn {
-            background: #16213e;
+            background: #e94560;
             color: #fff;
             border: none;
             padding: 14px 28px;
@@ -89,7 +75,7 @@
         }
         
         .header-cta-btn:hover {
-            background: #0f3460;
+            background: #16213e;
         }
         
         /* Hero */
@@ -102,14 +88,10 @@
             color: #fff;
         }
         
-        .hero::before {
-            content: '🔬';
-            position: absolute;
-            top: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 80px;
-            opacity: 0.3;
+        .hero-logo {
+            height: 120px;
+            margin-bottom: 30px;
+            filter: brightness(0) invert(1);
         }
         
         .hero h1 {
@@ -306,29 +288,33 @@
         
         .brands-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
             max-width: 1200px;
             margin: 0 auto;
+            align-items: center;
         }
         
         .brand-item {
-            position: relative;
-            overflow: hidden;
-            height: 380px;
-            background: #16213e;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s;
+            height: 120px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
-            color: #fff;
-            font-weight: 600;
-            letter-spacing: 2px;
         }
         
         .brand-item:hover {
-            background: #e94560;
-            transition: all 0.3s;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .brand-item img {
+            max-width: 100%;
+            max-height: 80px;
+            object-fit: contain;
         }
         
         /* Services Section */
@@ -551,10 +537,10 @@
             background: #1a1a2e;
         }
         
-        footer .logo {
+        footer .logo-img {
+            height: 80px;
             margin-bottom: 30px;
-            font-size: 32px;
-            color: #e94560;
+            filter: brightness(0) invert(1);
         }
         
         footer p {
@@ -595,8 +581,8 @@
                 padding: 15px 20px;
             }
             
-            .logo {
-                font-size: 28px;
+            .logo-img {
+                height: 45px;
             }
             
             .mobile-toggle {
@@ -635,8 +621,8 @@
                 padding: 80px 20px;
             }
             
-            .hero::before {
-                font-size: 60px;
+            .hero-logo {
+                height: 80px;
             }
             
             .hero h1 {
@@ -672,12 +658,8 @@
                 font-size: 64px;
             }
             
-            .product-card h3 {
-                font-size: 22px;
-            }
-            
             .brand-item {
-                height: 300px;
+                height: 100px;
             }
             
             .inquiry-content {
@@ -741,7 +723,7 @@
 
     <!-- Header -->
     <header>
-        <div class="logo">Agitech <span>Scientific</span></div>
+        <img src="Agitech Scientific eng logo.png" alt="Agitech" class="logo-img">
         <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
         <nav>
             <a href="#home" onclick="toggleMenu()">Home</a>
@@ -755,6 +737,7 @@
 
     <!-- Hero -->
     <section class="hero" id="home">
+        <img src="Agitech Scientific eng logo.png" alt="Agitech" class="hero-logo">
         <h1>Agitech <span>Scientific</span></h1>
         <p>Integrated Scientific Instruments & Laboratory Solutions</p>
         <div class="hero-cta">
@@ -822,14 +805,33 @@
             <p>Trusted Global Brands</p>
         </div>
         <div class="brands-grid">
-            <div class="brand-item">Agilent</div>
-            <div class="brand-item">Thermo Fisher</div>
-            <div class="brand-item">Shimadzu</div>
-            <div class="brand-item">Waters</div>
-            <div class="brand-item">PerkinElmer</div>
-            <div class="brand-item">Bruker</div>
-            <div class="brand-item">Mettler Toledo</div>
-            <div class="brand-item">Eppendorf</div>
+            <div class="brand-item">
+                <img src="BIO-RAD LOGO CMYK_30cm_300dpi.jpg" alt="Bio-Rad">
+            </div>
+            <div class="brand-item">
+                <img src="sciex-logo.png" alt="SCIEX">
+            </div>
+            <div class="brand-item">
+                <img src="Metrohm PNG.png" alt="Metrohm">
+            </div>
+            <div class="brand-item">
+                <img src="MolecularDevices_Logo.png" alt="Molecular Devices">
+            </div>
+            <div class="brand-item">
+                <img src="PILODIST-Logo_RGB-2020-removebg-preview.png" alt="Pilodist">
+            </div>
+            <div class="brand-item">
+                <img src="StanhopeSeta.png" alt="Stanhope-Seta">
+            </div>
+            <div class="brand-item">
+                <img src="Logo-F-DGSi.jpg" alt="F-DGSi">
+            </div>
+            <div class="brand-item">
+                <img src="LC Tech.jpg" alt="LC Tech">
+            </div>
+            <div class="brand-item">
+                <img src="Orbis-Logo-petrol-klein.png" alt="Orbis">
+            </div>
         </div>
     </section>
 
@@ -895,7 +897,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="logo">Agitech <span>Scientific</span></div>
+        <img src="Agitech Scientific eng logo.png" alt="Agitech" class="logo-img">
         <p>Integrated Scientific Instruments S.A.E</p>
         <p>📞 +2 012 852 687 96 | 📍 Nasr City, Cairo, Egypt</p>
         <p>🕐 Sun - Thu: 9AM - 5PM</p>
@@ -909,7 +911,6 @@
     <script>
         // Inquiry Functions
         function openInquiry(product) {
-            document.getElementById('selectedProduct').textContent = product;
             document.getElementById('inquiryModal').classList.add('show');
             document.body.style.overflow = 'hidden';
         }
